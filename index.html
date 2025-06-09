@@ -12,7 +12,7 @@
     <header class="cabecalho">
       <div class="container">
         <input type="checkbox" id="menu" class="container__botao" />
-        <label for="menu">
+        <label for="menu" class="container__rotulo">
           <span class="cabecalho__menu-hamburguer container__imagem"></span>
         </label>
         <ul class="lista-menu">
@@ -72,11 +72,13 @@
         <a href="#">
           <img src="img/Favoritos.svg" alt="meus favoritos" class="container__imagem container__imagem--transparente" />
         </a>
-        <a href="#">
+        <a href="#" class="container__link">
           <img src="img/Compras.svg" alt="carrinho de compras" class="container__imagem" />
+          <p class="container__texto"> Minha Sacola</p>
         </a>
-        <a href="#">
+        <a href="#" class="container__link">
           <img src="img/Usuario.svg" alt="meu perfil" class="container__imagem" />
+          <p class="container__texto">Meu perfil</p>
         </a>
       </div>
     </header>
@@ -94,6 +96,7 @@
     <section class="carrossel">
       <h2 class="carrossel__titulo">ultímos lançamentos</h2>
       <!-- Slider main container -->
+       <div class="carrossel__container">
       <div class="swiper">
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -148,10 +151,12 @@
           <!-- 2° Coluna -->
            <a href="#" class="botoes__ancora"> Saiba mais</a>
         </div>
+        </div>
     </section>
     <section class="carrossel">
       <h2 class="carrossel__titulo">Mais vendidos</h2>
       <!-- Slider main container -->
+              <div class="carrossel__container">
       <div class="swiper">
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -204,6 +209,7 @@
           </ul>
           <!-- 2° Coluna -->
            <a href="#" class="botoes__ancora"> Saiba mais</a>
+           </div>
         </div>
     </section>
     <section class="topicos">
@@ -255,6 +261,10 @@
           <img src="img/CasaDoCodigo.svg" alt="Logo da casa do codigo">
           <a href="#" class="lista-rodape__link">Casa do codigo</a>
         </li>
+            <li class="lista-rodape__item">
+            <img src="img/Caelum.svg" alt="Logo da caelum">
+            <a href="#" class="lista-rodape__link">Caelum</a>
+    </li>
       </ul>
       <ul class="lista-rodape">
         <li class="lista-rodape__titulo">Educacao online</li>
